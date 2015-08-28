@@ -5,6 +5,7 @@ from os import listdir
 
 sheet_name ="Sheet1"
 output_file_name= "Merge.xlsx"
+def_cols = ["a","b","c","d"]
 
 def program():
 	arr = readFiles()
@@ -54,7 +55,7 @@ def readRow(row,row_num):
     return arr_rows
 
 
-def_cols = ["a","b","c","d"]
+
 def writeFile(arr):
     workbook = xlwt.Workbook()
     sheet = workbook.add_sheet(sheet_name)  
